@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        /* font*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family:
+                'Poppins',
+                sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container mt-5">
+        <!-- input box -->
+        <div class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Search here" id="searchInput">
+            <button id="search-btn" class="btn btn-dark">Search</button>
+        </div>
+    </section>
+
+    <h4 id="book-count" class="text-center"></h4>
+
+
+    <section class="container mt-2">
+        <div id="error"></div>
+        <!-- books -->
+        <div id="book-container" class="row">
+
+        </div>
+    </section>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
